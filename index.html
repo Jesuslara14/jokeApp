@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke App</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <style>
+        body{
+            background-color: black;
+        }
+
+        .selectionSection{
+            background-color: gray;
+            color: white;
+        }
+
+        .joke{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="selectionSection">
+        <h4>What joke do you want?</h4>
+        <select name="selection" id="selection">
+            <option value="Programming">Programming</option>
+            <option value="Spooky">Spooky</option>
+            <option value="Christmas">Christmas</option>
+            <option value="Misc">Misc</option>
+        </select>
+        <button onclick="newJoke()">Get Joke</button>
+    </div>
+    <div class="joke">
+        <div id="text">
+
+        </div>
+        <button id="next" style="display: none;" onclick="throwBack()">?</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
